@@ -1,0 +1,150 @@
+#header {
+    background-color: black;
+    color: #ff6a00;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6a00;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+.botao-principal {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-principal:hover {
+    background-color: #45a049; 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.prateleira {
+    background-color: #f8f8f8;
+    border: 2px solid #ff6a00;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.prateleira:hover {
+    transform: scale(1.05);
+}
+
+.botao-adicionar {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    font-size: 2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-adicionar:hover {
+    background-color: #e55c00;
+    transform: scale(1.05);
+}
+
+.produto {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.descricao.produto,
+.preço {
+    margin: 10px 0;
+}
+
+.estado {
+    font-weight: bold;
+}
+.preço {
+    font-weight: bold;
+    color: black;
+    font-size: 1.1em;
+}
+
+.edit-button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.edit-button:hover {
+    background-color: #e55c00;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.delete-button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao-adicionar {
+        width: 100%;
+        height: auto;
+    }
+
+    .prateleira {
+        width: 90%;
+    }
+}
