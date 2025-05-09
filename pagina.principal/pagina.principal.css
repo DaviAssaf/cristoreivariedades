@@ -1,0 +1,306 @@
+@charset"UTF-8";
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do container do logo */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#logo-container img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+/* Título principal */
+#titulo_pagina h1 {
+    color: #ff6a00; /* Laranja mais vibrante */
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navegação principal */
+#box_nav nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    border-bottom: 3px solid #ff6a00;
+}
+
+#box_nav nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#box_nav nav a:hover {
+    background-color: #ff6a00;
+}
+
+/* Barra de busca */
+#search-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff6a00;
+    border-radius: 5px;
+}
+
+#search-container button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#search-container button:hover {
+    background-color: black;
+}
+
+/* Botão de Login */
+#login-button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#login-button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+/* Estilos do Popup */
+.popup {
+    display: none;
+    position: absolute;
+    top: 625px;  /* Ajuste da posição vertical */
+    left: 50px;  /* Ajuste da posição horizontal */
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+.popup-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-icon-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #666;
+}
+
+.popup-content {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content a {
+    text-decoration: none;
+    color: #0066cc;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.popup-content a:hover {
+    text-decoration: underline;
+}
+
+.popup-footer {
+    text-align: right;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px;
+}
+
+.popup-footer button {
+    background-color: #f1f1f1;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popup-footer button:hover {
+    background-color: #ddd;
+}
+
+/* Ajuste do ícone do perfil */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-menu button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.user-menu button img {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: none;
+}
+
+.user-menu button span {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Promoção da semana */
+main h2 {
+    color: #ff6a00;
+    text-align: center;
+    padding: 30px ;
+    font-size: 2em;
+}
+
+/* Container de produtos */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.prateleira1, .prateleira2, .prateleira3 {
+    background-color: #f8f8f8;
+    border: 2px solid #ff6a00;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.descricao.produto, .preço {
+    margin: 10px 0;
+}
+
+.preço {
+    font-weight: bold;
+    color: black;
+    font-size: 1.1em;
+}
+
+button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+#box_informacoes{
+background-color: #ff6a00;
+color: white;
+font-style: normal;
+text-align: center;
+font-weight: bold;
+font-size: 1em;
+font-family: Arial, Helvetica, sans-serif;
+padding: 10px;
+}
+
+#contatos > h4{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#box_contatos a {
+   text-decoration: none;
+   padding: 10px;
+}
+
+#box_contatos img:hover{
+    background-color: yellow;
+    padding: 5px;
+    transition-duration: 0.10s;
+    border-radius: 10px;
+
+}
+
+#sobre-nos h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#sobre-nos{
+    text-align: center;
+}
