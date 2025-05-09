@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Cliente</title>
+        <link rel="stylesheet" href="cadastroestilo.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cadastro de Novo Cliente</h1>
+            <form action="cadastro.php" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" maxlength="9" placeholder="13483-000" required>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+                <label for="senha">Crie uma Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="confirm">Confirme sua senha</label>
+                <input type="password" id="confirma-senha" name="confirm" placeholder="Confirme sua senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <script>
+            var password = document.getElementById("senha"), confirm_password = document.getElementById("confirma-senha");
+
+            function validarSenha(){
+                if(password.value != confirm_password.value) {
+                    confirm_password.setCustomValidity("Senhas diferentes!");
+                } else {
+                    confirm_password.setCustomValidity('');
+                }
+            }
+
+            password.onchange = validarSenha;
+            confirm_password.onkeyup = validarSenha;
+        </script>
+    </body>
+</html>
