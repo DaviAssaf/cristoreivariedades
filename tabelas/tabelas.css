@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ff6a00;
+}
+
+#header h1 {
+    margin: 0;
+    color: #ff6a00;
+}
+
+.table-section {
+    padding: 20px;
+}
+
+.table-container {
+    margin-bottom: 30px;
+    border: 2px solid #ff6a00;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-container h3 {
+    background-color: #ff6a00;
+    color: white;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ff6a00;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #ff6a00;
+    color: white;
+    font-weight: bold;
+}
+
+.table-container td {
+    background-color: #f8f8f8;
+}
+
+.table-container tr:hover {
+    background-color: #ffdab9;
+}
+
+.table-container img {
+    max-width: 100px; /* Limita a largura das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    margin: 0 auto; /* Centraliza a imagem na célula */
+}
+
+.empty-message {
+    color: #ff6a00;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.back-button button {
+    color: white;
+    background-color: #ff6a00;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.toggle-button {
+    color: white;
+    background-color: #ff6a00;
+    padding: 8px 16px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
